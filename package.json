@@ -1,0 +1,38 @@
+{
+  "name": "f1-tool",
+  "version": "1.0.0",
+  "description": "A tool to create f1 ui animations",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Mikko Haapoja",
+    "email": "me@mikkoh.com",
+    "url": "https://github.com/mikkoh"
+  },
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "bigwheel": "^1.2.2",
+    "browserify": "^11.0.1",
+    "drag-drop": "^2.2.4",
+    "electron-prebuilt": "^0.30.2",
+    "flux": "^2.0.3",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "watchify": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "f1,tool,animation,creation,tween,tweening,ease"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/f1-tool.git"
+  },
+  "homepage": "https://github.com/Jam3/f1-tool",
+  "bugs": {
+    "url": "https://github.com/Jam3/f1-tool/issues"
+  }
+}
