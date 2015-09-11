@@ -48,3 +48,30 @@ panels.elements.createSidebarPane(
     );
   }
 );
+
+var connect = chrome.runtime.connect({
+    name: 'devtools'
+});
+
+connect.onMessage.addListener(function (message) {
+    // Handle responses from the background page, if any
+    console.log(message);
+});
+
+// now get the current targets in the page
+chrome.devtools.inspectedWindow.eval(
+  "f1targets",
+  (f1targets, isException) => {
+
+    if (isException) {
+      console.log(isException);
+    } else {
+
+      connect.postMessage({targets: f1targets});
+    }
+  }
+);
+
+
+
+

@@ -33,12 +33,5 @@ domready(function () {
     },
     components: [inspectElement]
   });
-
-
-  var port = chrome.runtime.connect({name: "Eval in context"});
-  port.onMessage.addListener(function (msg) {
-    console.log(msg);
-  });
-  port.postMessage('asdfasfd');
 });
 

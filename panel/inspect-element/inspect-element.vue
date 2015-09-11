@@ -13,15 +13,21 @@
             <input type="number" min=0 max=1 v-model="property" number>
           </div>
           <div class="position" v-if="$key === 'position'">
-            x:
-            <input type="range" min="{{Math.min(-100, property[0] - 100)}}" max="{{Math.max(100, property[0] + 100)}}" v-model="property[0]" number>
-            <input type="number" v-model="property[0]" number>
-            y:
-            <input type="range" min="{{Math.min(-100, property[1] - 100)}}" max="{{Math.max(100, property[1] + 100)}}" v-model="property[1]" number>
-            <input type="number" v-model="property[1]" number>
-            z:
-            <input type="range" min="{{Math.min(-100, property[2] - 100)}}" max="{{Math.max(100, property[2] + 100)}}" v-model="property[2]" number>
-            <input type="number" v-model="property[2]" number>
+            <div>
+              x:
+              <input type="range" min="{{Math.min(-100, property[0] - 100)}}" max="{{Math.max(100, property[0] + 100)}}" v-model="property[0]" number>
+              <input type="number" v-model="property[0]" number>
+            </div>
+            <div>
+              y:
+              <input type="range" min="{{Math.min(-100, property[1] - 100)}}" max="{{Math.max(100, property[1] + 100)}}" v-model="property[1]" number>
+              <input type="number" v-model="property[1]" number>
+            </div>
+            <div>
+              z:
+              <input type="range" min="{{Math.min(-100, property[2] - 100)}}" max="{{Math.max(100, property[2] + 100)}}" v-model="property[2]" number>
+              <input type="number" v-model="property[2]" number>
+            </div>
           </div>
           <div class="position" v-if="$key === 'color'">
             <colorpicker rgba-tuple="{{property}}"></colorpicker>
