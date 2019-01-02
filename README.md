@@ -4,6 +4,9 @@
 
 A tool to create f1 ui animations
 
+## Important
+This project is no longer maintained by Jam3 and was archived. If you want to unarchive it and contribute, please contact td@jam3.com
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/f1-tool.png)](https://www.npmjs.com/package/f1-tool)
